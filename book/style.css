@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.nav{
+    background-color: beige;
+    padding: 30px;
+}
+.book-container{
+    width: 20%;
+    padding: 10px;
+    background-color: burlywood;
+    margin: 20px 15px ;
+    border-radius: 7px;
+    display: inline-block;
+    vertical-align: top;
+    flex-basis: 23%;
+}
+.book-container button{
+    background-color: brown;
+    color: antiquewhite;
+    padding: 3px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+.btn{
+    padding: 20px 25px;
+    font-size: 35px;
+    border-radius: 100%;
+    background-color: bisque;
+    border: none;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+.overlay{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    display: none;
+}
+.bookdetails{
+    width: 30%;
+    background-color: blueviolet;
+    position: absolute;
+    top: 20px;
+    left: 30%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 5px;
+    display: none;
+}
+.bookdetails h2{
+    padding: 10px;
+}
+.bookdetails input{
+    width: 80%;
+     background: transparent;
+     border: none;
+     margin-top: 10px;
+     border-bottom: 2px solid white;
+     padding: 20px;
+}
+.bookdetails textarea{
+    width: 80%;
+     background: transparent;
+     border: 2px solid white;
+     margin-top: 10px;
+     padding: 20px;
+}
+.bookdetails input::placeholder{
+    color:white;
+}
+.bookdetails textarea::placeholder{
+    color: white;
+}
+.bookdetails button{
+    background-color: rgb(230, 158, 158);
+    color: antiquewhite;
+    width: 60px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#main{
+    display: flex;
+}

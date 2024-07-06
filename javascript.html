@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        #container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+        .box{
+            width: 250px;
+            height: 250px;
+            background-color: blueviolet;
+            transition: 2s;
+
+        }
+        .imgg{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 200px;
+            z-index: 10;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box" id="box" onmouseenter="MyFun()" onmouseleave="myFun()">
+            <div class="imgg" id="imgg"><img src="pngegg.png" height="150px" width="150px"></div>
+        </div>
+
+    </div>
+    
+</body>
+<script>
+    var a = document.getElementById('box');
+
+    function MyFun(){
+        a.style.transform = "rotateY(180deg )";
+    }
+    function myFun(){
+        a.style.transform = "rotateY(0deg)";
+    }
+    
+    </script>
+</html>
